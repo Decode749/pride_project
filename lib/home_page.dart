@@ -60,10 +60,12 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
-            const Padding(
-              padding: EdgeInsets.all(8),
+            Padding(
+              padding: const EdgeInsets.all(8),
               child: Text(
                 'Get Best Design,Always!',
+                style:
+                    kInterSemibold.copyWith(fontSize: 12, color: Colors.green),
                 textAlign: TextAlign.start,
               ),
             ),
@@ -86,7 +88,7 @@ class _HomePageState extends State<HomePage> {
                       },
                       child: Container(
                         margin: EdgeInsets.only(
-                          left: index == 0 ? kPaddingHorizontal : 15,
+                          left: index == 0 ? kPaddingHorizontal : 8,
                           right: index == catagories.length - 1
                               ? kPaddingHorizontal
                               : 0,
@@ -105,6 +107,7 @@ class _HomePageState extends State<HomePage> {
                             catagories[index],
                             style: kInterMedium.copyWith(
                               color: current == index ? kWhite : kBlack,
+                              fontSize: 12,
                             ),
                           ),
                         ),
@@ -112,6 +115,18 @@ class _HomePageState extends State<HomePage> {
                     );
                   }),
             ),
+            const Divider(
+              indent: 8,
+              endIndent: 8,
+              height: 30,
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8),
+              child: Text(
+                'Popular Design',
+                style: kInterBold.copyWith(color: kBlack, fontSize: 16),
+              ),
+            )
           ],
         ),
       ),

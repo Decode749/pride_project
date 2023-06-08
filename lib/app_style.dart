@@ -7,7 +7,7 @@ const Color kBlack = Color(0xff000000);
 const Color kWhite = Color(0xffffffff);
 
 const double kPadding20 = 20.0;
-const double kPaddingHorizontal = 24.0;
+const double kPaddingHorizontal = 8.0;
 
 final kInputBorder = OutlineInputBorder(
     borderRadius: BorderRadius.circular(15),
